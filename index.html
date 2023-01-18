@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------OUR CSS------>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Employee Details</title>
+  </head>
+  <body onload="dataSet()">
+    <div class="container">
+      <div class="cards-box">
+        <button class="btn cards-btn">GRID-SHOW</button>
+      </div>
+      <div class="cards hidden">
+        <!---Injecting from DOM-->
+      </div>
+
+      <div class="list">
+        <div class="list-box">
+          <button class="btn list-btn">LIST-SHOW</button>
+        </div>
+        <div class="lists hidden">
+          <table>
+            <thead class="list-head">
+              <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Id</th>
+                <th class="text-center">Gender</th>
+                <th class="text-center">Skills</th>
+                <th class="text-center">Project</th>
+                <th class="text-center">HCM</th>
+                <th class="text-center">EDIT</th>
+                <th class="text-center">DELETE</th>
+              </tr>
+            </thead>
+            <tbody class="list-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

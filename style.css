@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 150);
+  font-family: sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+  column-gap: 50px;
+}
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 20px;
+  background-color: #f5f5f5;
+}
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-holder {
+  width: 60%;
+}
+.trash-icon {
+  width: 20px;
+  height: 20px;
+  color: rgb(94, 6, 6);
+  cursor: pointer;
+}
+.btn-card {
+}
+.hidden {
+  display: none;
+}
+.cards-box,
+.list-box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.btn {
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.84);
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.options-box,
+.cardBtn-box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0;
+}
+.option-btn {
+  padding: 5px 10px;
+  color: #333;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.edit-icon,
+.del-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text-center {
+  text-align: center;
+  padding: 10px 20px;
+}
+table {
+  background-color: #fff;
+}
